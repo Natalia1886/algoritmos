@@ -18,7 +18,7 @@ def busqueda_binaria(diccionario,objetivo):
         else:
             alto = medio - 1
     return -1
-
+# TAREA
 
 def organizar_diccionario(diccionario):
     n=len(diccionario)
