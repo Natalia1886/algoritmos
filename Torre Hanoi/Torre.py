@@ -4,27 +4,23 @@ def torre_hanoi(nDiscos):
     Palo2 = []
     Palo3 = []
 
-    # Crear la torre inicial en Palo1
     for i in range(nDiscos, 0,-1):
         Palo1.append(i)
 
-    print("Estado inicial: \n",        f"Palo1:, {Palo1} \n",
+    print("Estado inicial: \n",        
+          f"Palo1:, {Palo1} \n",
         f"Palo2:, {Palo2} \n",
         f"Palo3:, {Palo3} \n",
         "************************")
 
   
 
-    # Simulación de movimientos sin recursividad
     for i in range(0, nMovimientos +1):
         if i % 3 == 1:
-            # Mover entre origen y destino
             mover(Palo1, Palo3)
         elif i % 3 == 2:
-            # Mover entre origen y auxiliar
             mover(Palo1, Palo2)
         elif i % 3 == 0:
-            # Mover entre auxiliar y destino
             mover(Palo2, Palo3)
 
 
